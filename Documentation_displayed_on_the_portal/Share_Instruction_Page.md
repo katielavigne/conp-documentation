@@ -250,9 +250,10 @@ Tools and pipelines can be uploaded using [Boutiques](https://boutiques.github.i
 
 For more information on how to do that, please visit the 'Publishing your own tool' section of the [Boutiques tutorial Python notebook](https://github.com/boutiques/tutorial/blob/master/notebooks/boutiques-tutorial.ipynb)
 
+---
 # <a name="experiment"></a>Experiment Addition Procedure
 
-#### <a name="required"></a> *Required files in the root directory of the experiment (applies to all experiments and upload methods)*
+#### <a name="required_exp"></a> *Required files in the root directory of the experiment (applies to all experiments and upload methods)*
 
 - A `README.md` file: The content of this file will be displayed in the portal page describing your experiment. It is in Markdown format, to which there are many guides but [here is one quick cheatsheet]( https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
@@ -266,31 +267,24 @@ For more information on how to do that, please visit the 'Publishing your own to
 
 It is possible to upload a dataset using one of the following options:
 
-- [I. Upload using Zenodo](#zenodo)
-- [II. Upload using OSF](#osf)
+- [I. Upload using Zenodo](#zenodo_exp)
+- [II. Upload using OSF](#osf_exp)
 
 If you need help at any stage, please [open an issue in
 the CONP-PCNO/conp-dataset repository](https://github.com/CONP-PCNO/conp-dataset/issues/new/choose) and we will do our best to help you.
 
-### <a name="zenodo"></a> I. Upload using *Zenodo*
+### <a name="zenodo_exp"></a> I. Upload using *Zenodo*
 
-1. Add the [required](#required) files to the root directory of the experiment and consider the [optional image/gif](#optional_exp), as described above.
+1. Add the [required](#required_exp) files to the root directory of the experiment and consider the [optional image/gif](#optional_exp), as described above.
 
 2. Upload your experiment to [Zenodo](https://zenodo.org) with the specific keyword `conp-experiment`.  If your experiment is larger than 50GB you will need to contact [Zenodo support](https://zenodo.org/support) using the request category of "File upload quota increase" before you will be able to upload it.
     
 3. If you set your experiment as **restricted**, create a [Zenodo Personal Access Token](https://zenodo.org/account/settings/applications/tokens/new/) (via *Applications > Personal access tokens > New Token*). Check all scopes when creating the token and send the token via email to CONP Technical Steering Committee member Tristan Glatard (tglatard@encs.concordia.ca).
 
-### <a name="osf"></a> II. Upload using *OSF*
+### <a name="osf_exp"></a> II. Upload using *OSF*
 
-1. Add the [required](#required) files to the root directory of the experiment and consider the [optional image/gif](#optional_exp), as described above.
+1. Add the [required](#required_exp) files to the root directory of the experiment and consider the [optional image/gif](#optional_exp), as described above.
 
 2. Upload your dataset to the [OSF](https://osf.io/) with the specific tag `conp-experiment`.
     
-3. CONP supports both `private` and `public` OSF experiments. 
-  - For `Public` experiments, ensure that the dataset is set to `Public` on OSF. 
-  - For `Private` experiments, do the following to ensure that the CONP automatic crawler can grep the OSF experiments and add it to the [CONP super dataset](https://github.com/CONP-PCNO/conp-dataset):
-       - Ensure that the experiment is set to `Private` on the OSF 
-		- In the `Contributors` tab for the experiments, create user `CONP-BOT` and grant it `READ` permission. 
-		- **Do not** add the `CONP-BOT` user as a Bibliographic Contributor. 
-
-![](img/Share_Dataset_Instruction_Page_OSF_private_grant_conp_bot_permission.png)
+3. Ensure that the dataset is set to `Public` on OSF.
