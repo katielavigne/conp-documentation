@@ -279,7 +279,7 @@ the CONP-PCNO/conp-dataset repository](https://github.com/CONP-PCNO/conp-dataset
 
 2. Upload your experiment to [Zenodo](https://zenodo.org) with the specific keyword `conp-experiment`.  If your experiment is larger than 50GB you will need to contact [Zenodo support](https://zenodo.org/support) using the request category of "File upload quota increase" before you will be able to upload it.
     
-3. If you set your experiment as **restricted**, create a [Zenodo Personal Access Token](https://zenodo.org/account/settings/applications/tokens/new/) (via *Applications > Personal access tokens > New Token*). Check all scopes when creating the token and send the token via email to CONP Technical Steering Committee member Tristan Glatard (tglatard@encs.concordia.ca).
+3. Ensure your experiment is set to **open access**.
 
 ### <a name="osf_exp"></a> II. Upload using *OSF*
 
